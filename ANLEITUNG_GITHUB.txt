@@ -1,0 +1,16 @@
+A320 EFB – APK mit GitHub Actions erstellen
+
+1. Auf github.com ein neues PRIVATE Repository erstellen (ohne README).
+2. Im Repository "uploading an existing file" anklicken.
+3. Den INHALT dieses Ordners hochladen, inklusive .github/workflows/build-apk.yml.
+   Achtung: Versteckte Ordner (.github) können im Dateimanager ausgeblendet sein.
+   Alternativ die Dateien einzeln per Git hochladen.
+4. Änderungen auf Branch main committen.
+5. Im Tab "Actions" den Workflow "A320 EFB APK bauen" auswählen.
+   Falls nötig: Actions für das Repository aktivieren.
+6. "Run workflow" anklicken (oder den automatischen Lauf nach dem Commit abwarten).
+7. Nach erfolgreichem Lauf unten unter "Artifacts" A320-EFB-APK herunterladen.
+8. Das heruntergeladene ZIP entpacken; app-debug.apk auf dem Tablet installieren.
+
+Voraussetzung: Tablet und Fenix-PC im selben erreichbaren lokalen Netzwerk.
+Die App ruft http://192.168.178.41:8083/#/efb auf.
